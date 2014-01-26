@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Activity:
+  = @entry.activity_id
+%p
+  %b Start:
+  = @entry.start
+%p
+  %b End:
+  = @entry.end
+%p
+  %b Specification:
+  = @entry.specification
+
+= link_to 'Edit', edit_entry_path(@entry)
+\|
+= link_to 'Back', entries_path
